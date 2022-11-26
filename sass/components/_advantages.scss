@@ -1,0 +1,38 @@
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.skills {
+  display: flex;
+  gap: 30px;
+}
+.skills__item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
+.skills__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.picture {
+  height: 120px;
+  background-color: #b9b1b1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: var(--background-color-btn);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills__description {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}

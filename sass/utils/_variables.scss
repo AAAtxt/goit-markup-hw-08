@@ -1,0 +1,19 @@
+.site-body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+  color: var(--primary-text-color);
+}
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --background: #ffffff;
+  --background-hero: #c4c4c4;
+  --background-hero-footer: #2f303a;
+  --accent-color: #2196f3;
+  --footer-color-contacts: rgba(255, 255, 255, 0.6);
+  --background-color-btn: #f5f4fa;
+  --background-grey-new: #afb1b8;
+}
