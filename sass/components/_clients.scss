@@ -1,5 +1,9 @@
 .clients {
   margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
 }
 .clients__title {
   color: var(--secondary-text-color);
@@ -8,7 +12,10 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
 }
 .partners {
   display: flex;
@@ -18,32 +25,31 @@
 }
 
 .partners__logo {
-  // width: calc((100% - 5 * 30px) / 6);
-  // height: 92px;
+  width: calc((100% - 30px) / 2);
+  margin: 0px;
   @media screen and (min-width: 480px) {
-    width: calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 30px) / 2);
     margin: 0px;
   }
   @media screen and (min-width: 768px) {
-    width: calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 2 * 30px) / 3);
     margin: 0px;
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 8 * 15px) / 4);
+    width: calc((100% - 5 * 30px) / 6);
     margin: 0px;
-  }
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
   }
 }
 
 .partners__icon {
   margin: 16px 32px;
+  min-width: 106px;
 }
 .partners__link {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--background-grey-new);
