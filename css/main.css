@@ -78,6 +78,7 @@ img {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -89,7 +90,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
 
@@ -256,12 +262,60 @@ img {
   background-color: #188ce8;
 }
 
+@media screen and (max-width: 767px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .skills {
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .skills {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .skills__item {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .skills__item {
+    width: calc((100% - 60px) / 2);
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills__item {
+    width: calc((100% - 120px) / 4);
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills__item {
+    margin-bottom: 30px;
+  }
 }
 
 .skills__title {
@@ -273,17 +327,20 @@ img {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 120px;
   background-color: #b9b1b1;
-  padding-top: 25px;
-  padding-bottom: 25px;
   background: var(--background-color-btn);
   border-radius: 4px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .skills__description {
@@ -333,33 +390,42 @@ img {
 
 .team {
   background-color: var(--background-color-btn);
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+@media screen and (max-width: 767px) {
+  .team {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
 }
 
 .team__title {
   color: var(--secondary-text-color);
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
   text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 767px) {
+  .team__title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .specialists {
-  display: flex;
-  gap: 30px;
-}
-
-.specialist {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  width: 100%;
 }
 
 .specialists__member {
   background-color: var(--background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .specialists__member:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .specialist__name {
@@ -372,8 +438,11 @@ img {
   background-color: var(--background);
 }
 
-.team-name {
-  margin-bottom: 10px;
+@media screen and (max-width: 767px) {
+  .team-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 .specialist-position {
