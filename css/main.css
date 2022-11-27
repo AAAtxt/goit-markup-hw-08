@@ -359,10 +359,32 @@ img {
 .specialization {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .specialization {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    margin: -1px;
+  }
+}
 
 .specialization-list {
   display: flex;
   gap: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .specialization-item {
+    width: calc((100% - 60px) / 3);
+    margin: 0px;
+  }
 }
 
 .specialization-title {
@@ -371,7 +393,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .specialization-title {
+    margin-bottom: 50px;
+  }
 }
 
 .specialization-box {
