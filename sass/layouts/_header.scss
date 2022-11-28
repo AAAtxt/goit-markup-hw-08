@@ -27,7 +27,7 @@
 .header-container {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     position: relative;
     justify-content: space-between;
     padding: 16px 15px;
@@ -53,7 +53,7 @@
 }
 
 .header-pages-list {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -71,7 +71,7 @@
   }
 }
 .header-contacts {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -84,9 +84,6 @@
     margin: -1px;
   }
   @media screen and (min-width: 768px) {
-    // display: flex;
-    // flex-direction: column;
-    // margin-left: auto;
     display: inline-block;
     margin-left: auto;
   }
@@ -138,7 +135,7 @@
   }
 }
 .mobile-header-button {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     background-color: transparent;
     width: 40px;
     height: 40px;

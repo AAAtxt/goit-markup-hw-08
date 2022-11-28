@@ -150,7 +150,7 @@ img {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-container {
     position: relative;
     justify-content: space-between;
@@ -176,7 +176,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-pages-list {
     position: absolute;
     white-space: nowrap;
@@ -198,7 +198,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-contacts {
     position: absolute;
     white-space: nowrap;
@@ -276,7 +276,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile-header-button {
     background-color: transparent;
     width: 40px;
@@ -371,13 +371,13 @@ img {
   background-color: #188ce8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .advantages {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .advantages {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -423,7 +423,7 @@ img {
     margin: 0px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .skills__item {
     margin-bottom: 30px;
   }
@@ -439,7 +439,7 @@ img {
   color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .skills__title {
     text-align: center;
   }
