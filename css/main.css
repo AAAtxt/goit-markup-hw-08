@@ -134,8 +134,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   flex-direction: row-reverse;
   gap: 10px;
@@ -146,6 +144,19 @@ img {
 }
 .header-mail:hover, .header-mail:focus, .header-phone:hover, .header-phone:focus {
   color: var(--accent-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header-container {
+    position: relative;
+    justify-content: space-between;
+    padding: 16px 15px;
+    align-items: baseline;
+  }
 }
 
 .header-studio-link {
@@ -165,15 +176,48 @@ img {
   color: var(--accent-color);
 }
 
-.header-pages-list {
-  display: flex;
-  gap: 50px;
+@media screen and (max-width: 768px) {
+  .header-pages-list {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-pages-list {
+    display: flex;
+    gap: 50px;
+  }
 }
 
-.header-contacts {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
+@media screen and (max-width: 768px) {
+  .header-contacts {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: inline-block;
+    margin-left: auto;
+  }
 }
 
 .header-contacts-list {
@@ -185,15 +229,32 @@ img {
 .header-mail {
   width: inherit;
 }
+@media screen and (min-width: 768px) {
+  .header-mail {
+    margin-bottom: 10px;
+  }
+}
+
+.phone-icon {
+  display: block;
+  fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .phone-icon {
+    width: 10px;
+    height: 14px;
+  }
+}
 
 .post-icon {
   display: block;
   fill: currentColor;
 }
-
-.header-container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .post-icon {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .header-list-pages {
@@ -213,6 +274,48 @@ img {
   border-radius: 2px;
   background: var(--accent-color);
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-header-button {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+    border-color: transparent;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-header-button {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-header-icon {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    margin: -1px;
+  }
 }
 
 .hero {
@@ -268,7 +371,7 @@ img {
   background-color: #188ce8;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .advantages {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -320,7 +423,7 @@ img {
     margin: 0px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .skills__item {
     margin-bottom: 30px;
   }
@@ -336,7 +439,7 @@ img {
   color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .skills__title {
     text-align: center;
   }
@@ -646,7 +749,7 @@ img {
   margin-bottom: 60px;
   display: inline-block;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer-main-contats {
     width: 100%;
   }
