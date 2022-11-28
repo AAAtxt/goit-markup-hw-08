@@ -87,23 +87,32 @@
     display: inline-block;
     margin-left: auto;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .header-contacts-list {
-  display: flex;
   color: var(--primary-text-color);
-  vertical-align: middle;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    vertical-align: middle;
+  }
 }
 .header-mail {
   width: inherit;
   @media screen and (min-width: 768px) {
     margin-bottom: 10px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 .phone-icon {
   display: block;
   fill: currentColor;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1200px) {
     width: 10px;
     height: 14px;
   }
@@ -111,7 +120,7 @@
 .post-icon {
   display: block;
   fill: currentColor;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1200px) {
     width: 14px;
     height: 10px;
   }
