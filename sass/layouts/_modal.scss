@@ -10,8 +10,7 @@
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
   background-color: var(--background);
   border-radius: 4px;
   padding: 40px;
@@ -24,6 +23,14 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 .is-hidden {
@@ -159,6 +166,9 @@
 }
 
 .confirm-label {
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -218,6 +228,9 @@
 }
 
 .terms-agreement {
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

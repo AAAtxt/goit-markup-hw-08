@@ -335,32 +335,84 @@ img {
 
 .hero {
   background-color: var(--background-hero);
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .bg-hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-480-1x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-480-2x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768-1x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768-2x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-1600-1x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-1600-2x.jpg);
+    background-size: cover;
+  }
 }
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 696px;
+}
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero-button {
@@ -384,6 +436,16 @@ img {
 .hero-button:hover, .hero-button:focus {
   cursor: pointer;
   background-color: #188ce8;
+}
+@media screen and (max-width: 767px) {
+  .hero-button {
+    min-width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-button {
+    min-width: 216px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1002,8 +1064,7 @@ img {
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
   background-color: var(--background);
   border-radius: 4px;
   padding: 40px;
@@ -1017,6 +1078,18 @@ img {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .is-hidden {
@@ -1159,6 +1232,11 @@ img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .confirm-label {
+    font-size: 12px;
+  }
+}
 
 .confirm-input {
   margin-left: 20px;
@@ -1230,6 +1308,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-left: 5px;
+}
+@media screen and (max-width: 767px) {
+  .terms-agreement {
+    font-size: 12px;
+  }
 }
 
 .portfolio-btn {
