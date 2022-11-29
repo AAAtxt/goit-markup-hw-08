@@ -563,12 +563,14 @@ img {
 
 .specialization-list {
   display: flex;
+  margin: 0;
   gap: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .specialization-item {
     width: calc((100% - 60px) / 3);
+    height: auto;
     margin: 0px;
   }
 }
