@@ -180,3 +180,96 @@
     margin: -1px;
   }
 }
+// -----Мобильное меню-----//
+
+// .mob-menu {
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: var(--white-color);
+//   top: 0;
+//   position: fixed;
+//   z-index: 1;
+//   padding: 48px 15px 48px 40px;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .modal-open {
+//   width: 40px;
+//   height: 40px;
+
+//   background: var(--background);
+//   border: transparent;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   cursor: pointer;
+//   position: absolute;
+//   right: 15px;
+//   top: 10px;
+//   transition-property: fill;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-color);
+//   }
+// }
+// .modal-open-icon {
+// }
+// .mob-menu-list {
+//   // margin-bottom: 306px;
+// }
+// .point-none {
+// }
+// .mob-menu-list-pages {
+//   font-weight: 500;
+//   font-size: 40px;
+//   line-height: 1.18;
+//   letter-spacing: 0.02em;
+//   color: var(--secondary-text-color);
+// }
+
+// .mob-menu-list-pages:not(:last-child) {
+//   margin-bottom: 32px;
+// }
+
+// .mob-menu-contacts {
+// }
+// .mob-menu-contacts-list {
+//   margin-bottom: 32px;
+// }
+// .mob-menu-phone {
+//   font-weight: 500;
+//   font-size: 34px;
+//   line-height: 1.18;
+//   letter-spacing: 0.02em;
+//   color: var(--accent-color);
+// }
+// .mob-menu-mail {
+//   font-weight: 500;
+//   font-size: 24px;
+//   line-height: 1.17;
+//   letter-spacing: 0.02em;
+//   color: var(--primary-text-color);
+// }
+
+// .mob-menu-social {
+//   display: flex;
+//   gap: 20px;
+// }
+
+// .mob-menu-social-list {
+// }
+// .mob-menu-social-link {
+//   font-weight: 500;
+//   font-size: 18px;
+//   line-height: 1.22;
+//   letter-spacing: 0.02em;
+//   color: var(--accent-color);
+//   border-right: 1px solid rgba(33, 33, 33, 0.2);
+//   padding-right: 10px;
+// }
+// .mob-menu-social-link:not(:last-child) {
+//   border-right: 1px solid rgba(33, 33, 33, 0.2);
+// }
