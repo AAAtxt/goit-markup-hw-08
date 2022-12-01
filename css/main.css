@@ -63,6 +63,11 @@ img {
   text-decoration: none;
 }
 
+.underline-none-menu {
+  text-decoration: none;
+  color: #212121;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
