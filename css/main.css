@@ -351,7 +351,7 @@ img {
   overflow: auto;
 }
 
-.mob-modal-close {
+.mob-menu-close {
   width: 40px;
   height: 40px;
   background: var(--background);
@@ -368,7 +368,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-modal-close:hover, .mob-modal-close:focus {
+.mob-menu-close:hover, .mob-menu-close:focus {
   fill: var(--accent-color);
 }
 
