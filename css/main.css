@@ -419,6 +419,8 @@ img {
 .mob-menu-social {
   display: flex;
   gap: 20px;
+  margin-top: 64px;
+  flex-wrap: wrap;
 }
 
 .mob-menu-social-link {
@@ -444,8 +446,9 @@ img {
   padding-bottom: 200px;
   background-color: var(--background-hero);
   text-align: center;
+  max-width: 1600px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -458,7 +461,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 100%;
+  max-width: 1600px;
 }
 @media screen and (max-width: 767px) {
   .bg-hero {
@@ -743,7 +746,7 @@ img {
 @media screen and (min-width: 1200px) {
   .team__title {
     font-size: 36px;
-    line-height: 1.17px;
+    line-height: 1.17;
     margin-bottom: 50px;
     height: 42px;
   }
@@ -781,6 +784,10 @@ img {
   }
 }
 
+.specialist {
+  padding: 30px 32px;
+}
+
 .specialist__name {
   font-weight: 500;
   font-size: 16px;
@@ -792,7 +799,6 @@ img {
 }
 
 .team-name {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -1121,6 +1127,7 @@ img {
   .footer-email-input {
     min-width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
