@@ -63,6 +63,11 @@ img {
   text-decoration: none;
 }
 
+.underline-none-menu-current {
+  text-decoration: none;
+  color: #2196f3;
+}
+
 .underline-none-menu {
   text-decoration: none;
   color: #212121;
@@ -319,6 +324,7 @@ img {
     -webkit-clip-path: inset(50%);
             clip-path: inset(50%);
     margin: -1px;
+    display: none;
   }
 }
 
@@ -434,10 +440,10 @@ img {
 }
 
 .hero {
-  background-color: var(--background-hero);
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: var(--background-hero);
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .hero {
@@ -600,8 +606,9 @@ img {
     margin: 0px;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .skills__item {
+  .skills__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -627,7 +634,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
+  height: 120px;
   background-color: #b9b1b1;
   background: var(--background-color-btn);
   border-radius: 4px;
@@ -712,18 +719,33 @@ img {
 .team {
   background-color: var(--background-color-btn);
   padding-bottom: 60px;
+  padding-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 .team__title {
   color: var(--secondary-text-color);
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
   .team__title {
     font-size: 28px;
     line-height: 1.18;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17px;
+    margin-bottom: 50px;
+    height: 42px;
   }
 }
 
@@ -742,7 +764,6 @@ img {
   background-color: var(--background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 24px;
 }
 @media screen and (max-width: 767px) {
   .specialists__member:not(:last-child) {
@@ -820,12 +841,13 @@ img {
 }
 
 .clients {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .clients {
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -920,13 +942,13 @@ img {
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: nowrap;
+    gap: 93px;
   }
 }
 
 .footer-main-contats {
   text-align: center;
   margin-bottom: 60px;
-  display: inline-block;
 }
 @media screen and (max-width: 768px) {
   .footer-main-contats {
@@ -941,7 +963,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-main-contats {
     text-align: left;
-    max-width: 231px;
+    margin-bottom: 0;
   }
 }
 

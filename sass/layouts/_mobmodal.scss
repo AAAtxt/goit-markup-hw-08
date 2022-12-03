@@ -32,7 +32,6 @@
   position: absolute;
   right: 15px;
   top: 20px;
-
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,12 +39,6 @@
   &:focus {
     fill: var(--accent-color);
   }
-}
-.modal-open-icon {
-}
-.mob-menu-list {
-}
-.point-none {
 }
 
 .mob-menu-list-pages {
@@ -59,10 +52,6 @@
 
 .mob-menu-list-pages:not(:last-child) {
   margin-bottom: 32px;
-}
-.mob-menu-link {
-}
-.mob-menu-contacts {
 }
 .mob-menu-contacts-list {
   margin-bottom: 32px;
@@ -87,8 +76,6 @@
   gap: 20px;
 }
 
-.mob-menu-social-list {
-}
 .mob-menu-social-link {
   font-weight: 500;
   font-size: 18px;

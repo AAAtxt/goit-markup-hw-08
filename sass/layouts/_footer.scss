@@ -16,13 +16,14 @@
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: nowrap;
+    gap: 93px;
   }
 }
 
 .footer-main-contats {
   text-align: center;
   margin-bottom: 60px;
-  display: inline-block;
+
   @media screen and (max-width: 768px) {
     width: 100%;
   }
@@ -31,7 +32,8 @@
   }
   @media screen and (min-width: 1200px) {
     text-align: left;
-    max-width: 231px;
+    // max-width: 231px;
+    margin-bottom: 0;
   }
 }
 
